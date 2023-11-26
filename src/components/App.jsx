@@ -7,6 +7,9 @@ import data from 'JSON/data.json';
 import { Friends } from './Friend-list/Friends';
 import friends from 'JSON/friends.json';
 
+import { TransactionHistoryUser } from 'components/Transaction/Transaction';
+import  transaction from 'JSON/transactions.json';
+
 export const App = () => {
   return (
     <>
@@ -19,6 +22,7 @@ export const App = () => {
       />
       <UserStatistic title="Statistic" stats={data} />
       <Friends friends={friends} />
+      <TransactionHistoryUser items={transaction}/>
     </>
   );
 };
