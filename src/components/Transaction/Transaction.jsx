@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import css from './Styles.Transaction.css';
+import css from './Styles-Transaction.module.css';
 
 export const TransactionHistoryUser = ({ items }) => {
   return (
-    <table className={css.TransactionHistoryUser}>
+    <table className={css.transactionHistoryUser}>
       <thead>
         <tr>
           <th>Type</th>
@@ -25,5 +25,5 @@ export const TransactionHistoryUser = ({ items }) => {
 };
 
 TransactionHistoryUser.propTypes = {
-  items: PropTypes.array.isRequired
+  items: PropTypes.array.isRequired,
 };
